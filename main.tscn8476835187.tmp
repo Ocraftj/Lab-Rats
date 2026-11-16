@@ -1,0 +1,101 @@
+[gd_scene format=3 uid="uid://c837mpnt3eal1"]
+
+[ext_resource type="Script" uid="uid://dxt8f47gdadcc" path="res://character_body_2d.gd" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://b17l444dxqyxx" path="res://HallwayWithDoorsBg.png" id="1_5vw27"]
+[ext_resource type="Texture2D" uid="uid://dc7re6wn5xkhm" path="res://Neutral - Copy.png" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://c3xc1la2fidis" path="res://SlimeFollow1.png" id="3_h2yge"]
+[ext_resource type="Texture2D" uid="uid://bi2vky4281kj0" path="res://tube.png" id="5_7mycd"]
+[ext_resource type="Texture2D" uid="uid://bfjdns6hcrop1" path="res://SlimeFollow2.png" id="5_272bh"]
+[ext_resource type="Texture2D" uid="uid://d4ed22xq1ae2i" path="res://textbox.png" id="7_272bh"]
+[ext_resource type="Script" uid="uid://bp7vrpav41orj" path="res://textbox_1.gd" id="8_5vw27"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6fhyq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lquwl"]
+size = Vector2(29.913904, 29.803223)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6fhyq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_h2yge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_272bh")
+}],
+"loop": 1,
+"name": &"slime walk",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jq8tk"]
+
+[sub_resource type="Theme" id="Theme_kek77"]
+default_font_size = 40
+
+[node name="Node2D" type="Node2D" unique_id=1410200077]
+
+[node name="background" type="Sprite2D" parent="." unique_id=1489159332]
+z_index = -1
+position = Vector2(575, 325)
+scale = Vector2(0.6155817, 0.6155817)
+texture = ExtResource("1_5vw27")
+
+[node name="Tube" type="Area2D" parent="." unique_id=1386746560 groups=["Tubes"]]
+visible = false
+position = Vector2(221, 532)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tube" unique_id=1427822981]
+scale = Vector2(4.8139696, 10.1720085)
+shape = SubResource("RectangleShape2D_6fhyq")
+
+[node name="Sprite2D" type="Sprite2D" parent="Tube" unique_id=1617185079]
+scale = Vector2(0.35588437, 0.35588437)
+texture = ExtResource("5_7mycd")
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=1392863426]
+position = Vector2(200, 400)
+scale = Vector2(1.867944, 1.867944)
+script = ExtResource("1_0xm2m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1915402576]
+position = Vector2(14.94812, -2)
+scale = Vector2(2.4103763, 5.7711883)
+shape = SubResource("RectangleShape2D_lquwl")
+
+[node name="Slime" type="AnimatedSprite2D" parent="Player" unique_id=475102974]
+position = Vector2(-60, 70)
+scale = Vector2(0.05, 0.05)
+sprite_frames = SubResource("SpriteFrames_6fhyq")
+animation = &"slime walk"
+frame_progress = 0.14432189
+
+[node name="Girl" type="AnimatedSprite2D" parent="Player" unique_id=1415885395]
+position = Vector2(-36.000004, 71)
+scale = Vector2(0.05, 0.05)
+sprite_frames = SubResource("SpriteFrames_jq8tk")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=1274301162]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("2_h2yge")
+
+[node name="textbox 1" type="Sprite2D" parent="." unique_id=484801626]
+visible = false
+position = Vector2(583, 148)
+texture = ExtResource("7_272bh")
+script = ExtResource("8_5vw27")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="textbox 1" unique_id=456305983]
+
+[node name="Label" type="Label" parent="textbox 1/CanvasLayer" unique_id=1705993611]
+visible = false
+offset_left = 157.0
+offset_top = 32.0
+offset_right = 197.0
+offset_bottom = 81.0
+theme = SubResource("Theme_kek77")
+text = "hello
+"
+
+[connection signal="area_entered" from="Tube" to="Player" method="_on_tube_area_entered"]
+[connection signal="text1" from="Player" to="textbox 1" method="_on_player_text_1"]

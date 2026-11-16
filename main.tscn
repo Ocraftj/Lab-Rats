@@ -1,0 +1,622 @@
+[gd_scene format=3 uid="uid://c837mpnt3eal1"]
+
+[ext_resource type="Script" uid="uid://dxt8f47gdadcc" path="res://character_body_2d.gd" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://dk8i453elo1et" path="res://level_backgrounds.gd" id="1_4c57u"]
+[ext_resource type="Texture2D" uid="uid://dxpug8v6n3c6w" path="res://NEW[Vignette].png" id="2_efxa6"]
+[ext_resource type="Texture2D" uid="uid://catu0c11mgb6c" path="res://NEW[HallwayWithDoorsBg]2.png" id="3_efxa6"]
+[ext_resource type="Texture2D" uid="uid://c3xc1la2fidis" path="res://SlimeFollow1.png" id="3_h2yge"]
+[ext_resource type="Texture2D" uid="uid://l857lbquvpx7" path="res://104.png" id="4_0odxb"]
+[ext_resource type="Texture2D" uid="uid://ci5awwbpymwk2" path="res://BreakroomBg.png" id="4_w48qg"]
+[ext_resource type="Texture2D" uid="uid://bi2vky4281kj0" path="res://tube.png" id="5_7mycd"]
+[ext_resource type="Texture2D" uid="uid://bpad7cugxujej" path="res://Hallway 2 - Copy.png" id="5_074og"]
+[ext_resource type="Texture2D" uid="uid://bfjdns6hcrop1" path="res://SlimeFollow2.png" id="5_272bh"]
+[ext_resource type="Texture2D" uid="uid://di0mxrw01wmnt" path="res://105.png" id="5_lswn8"]
+[ext_resource type="Texture2D" uid="uid://bntphbn6q0fuf" path="res://neutral2.png" id="6_4c57u"]
+[ext_resource type="Texture2D" uid="uid://de6m4a67sjjh2" path="res://Hallway 1 - Copy.png" id="6_cegan"]
+[ext_resource type="Texture2D" uid="uid://dyowu0pa241fu" path="res://bear.png" id="7_0n3wm"]
+[ext_resource type="Texture2D" uid="uid://brn88ewdjfom3" path="res://Rm 102 - Crying Room Bg.png" id="7_074og"]
+[ext_resource type="Texture2D" uid="uid://bq7gylhyvaji2" path="res://Neutral shrank.png" id="7_efxa6"]
+[ext_resource type="Texture2D" uid="uid://ccsak6nkn8f6y" path="res://102.png" id="8_a6jrf"]
+[ext_resource type="Texture2D" uid="uid://dfbq5h7tafjqg" path="res://Rm 103 - Monster Rm Bg.png" id="8_cegan"]
+[ext_resource type="Texture2D" uid="uid://b026v5dgqqwee" path="res://text_slime.png" id="8_dg77c"]
+[ext_resource type="Texture2D" uid="uid://b6lui6i5hgrkm" path="res://Room of Origination.png" id="9_82xsv"]
+[ext_resource type="Texture2D" uid="uid://wso0un8en6vx" path="res://TestTubeWallAttached.png" id="9_cegan"]
+[ext_resource type="Texture2D" uid="uid://d0x2qwsi23le8" path="res://103.png" id="9_xuqvo"]
+[ext_resource type="Texture2D" uid="uid://3rpwvv8sme5r" path="res://text_girl.png" id="10_efxa6"]
+[ext_resource type="Texture2D" uid="uid://cj07y3td8ikgy" path="res://Rm 105 - Vent Rm Bg.png" id="10_getpj"]
+[ext_resource type="Texture2D" uid="uid://dlkv4nqxnboct" path="res://100.png" id="11_qsp4k"]
+[ext_resource type="Texture2D" uid="uid://b7ubxa2epr6tg" path="res://101.png" id="12_kq58d"]
+[ext_resource type="Texture2D" uid="uid://bidtatm07x5no" path="res://Rm 100 - Guard's Office.png" id="13_jq2sk"]
+[ext_resource type="Script" uid="uid://dpugavbm0rsm7" path="res://crying_girl_area.gd" id="16_come4"]
+[ext_resource type="Texture2D" uid="uid://5ofwoup4ayp8" path="res://CryingGirl1.png" id="16_facbu"]
+[ext_resource type="Texture2D" uid="uid://5qwb7amyxck1" path="res://monster.png" id="16_xuqvo"]
+[ext_resource type="Texture2D" uid="uid://k3auy3by4ni7" path="res://CryingGirl2.png" id="17_b1qrp"]
+[ext_resource type="Texture2D" uid="uid://bk5cct0pbgkif" path="res://TestTube.png" id="18_a6jrf"]
+[ext_resource type="Texture2D" uid="uid://cd2d4alrly6fs" path="res://CryingGirlQuestCompleteSprite1.png" id="18_come4"]
+[ext_resource type="Texture2D" uid="uid://brwwkk42uxstq" path="res://CryingGirlQuestCompleteSprite2.png" id="19_h8e4i"]
+[ext_resource type="Texture2D" uid="uid://4pjo3sg1ye6b" path="res://crack.png" id="19_xuqvo"]
+[ext_resource type="Texture2D" uid="uid://c68pifbwiimvq" path="res://crying_textbox.png" id="20_b1qrp"]
+[ext_resource type="Texture2D" uid="uid://c4bs5n18pw2xh" path="res://monster2.png" id="24_wnkbs"]
+[ext_resource type="Texture2D" uid="uid://dv0ca70ibseso" path="res://heldkeyidle.png" id="26_kq58d"]
+[ext_resource type="Texture2D" uid="uid://bmbvg40xvurc" path="res://crack2.png" id="27_abqjc"]
+[ext_resource type="Texture2D" uid="uid://dqxlld68hvsjh" path="res://SlimeDragKey2.png" id="27_htxhm"]
+[ext_resource type="Texture2D" uid="uid://gypblbrf0erc" path="res://SlimeDragKey1.png" id="28_jq2sk"]
+[ext_resource type="Texture2D" uid="uid://iwbe2f4awptd" path="res://key_1.png" id="29_4lmeg"]
+[ext_resource type="Texture2D" uid="uid://cwwgbme38h6ta" path="res://Room102Key.png" id="29_qsp4k"]
+[ext_resource type="Texture2D" uid="uid://dlrvcdyf3v8ec" path="res://key_2.png" id="30_0cp0l"]
+[ext_resource type="Texture2D" uid="uid://jake1p1uxfka" path="res://you_win.png" id="34_6iyjs"]
+[ext_resource type="AudioStream" uid="uid://buvqyj1qck3h7" path="res://LiminalTest02(EndOfGame).wav" id="34_blkrb"]
+[ext_resource type="AudioStream" uid="uid://dca56y2p0m7tb" path="res://LiminalTest01(Hallway).wav" id="34_uypp3"]
+[ext_resource type="Texture2D" uid="uid://dhf0ea6jswhg7" path="res://bearidle.png" id="36_qnost"]
+[ext_resource type="Texture2D" uid="uid://cjgt7535semo3" path="res://SlimeDragTeddyBear - Copy (2).png" id="37_wnkbs"]
+[ext_resource type="Texture2D" uid="uid://clfth0acc84ca" path="res://SlimeDragTeddyBear.png" id="38_f6a44"]
+[ext_resource type="Texture2D" uid="uid://p7x2t34x7fdr" path="res://slimefollow3.png" id="46_hrvbo"]
+[ext_resource type="Texture2D" uid="uid://ceu2ynt4ygg3s" path="res://slimefollow4.png" id="47_uypp3"]
+[ext_resource type="Texture2D" uid="uid://clemh00wydmym" path="res://slimefollow5.png" id="48_blkrb"]
+[ext_resource type="Texture2D" uid="uid://va27nf8h56tp" path="res://start.png" id="54_6iyjs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t7n2i"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3xd07"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_facbu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_b1qrp")
+}],
+"loop": 1,
+"name": &"crying",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_come4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_h8e4i")
+}],
+"loop": 1,
+"name": &"happy",
+"speed": 4.0
+}]
+
+[sub_resource type="Theme" id="Theme_facbu"]
+default_font_size = 20
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j0ogg"]
+size = Vector2(136.60661, 51.13405)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dwbtc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dwbtc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_wnkbs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_xuqvo")
+}],
+"loop": 1,
+"name": &"monster",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h83rl"]
+size = Vector2(39.658287, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3xd07"]
+size = Vector2(25.39426, 53.8172)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jq8tk"]
+size = Vector2(341.82422, 520.95337)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6fhyq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jq8tk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("29_4lmeg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_0cp0l")
+}],
+"loop": 1,
+"name": &"key",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w48qg"]
+size = Vector2(21.09963, 19.480057)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kek77"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_efxa6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_4c57u")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="Theme" id="Theme_a6jrf"]
+default_font_size = 29
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6fhyq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("36_qnost")
+}],
+"loop": 1,
+"name": &"bear_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("37_wnkbs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_f6a44")
+}],
+"loop": 1,
+"name": &"bear_walk",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_kq58d")
+}],
+"loop": 1,
+"name": &"key_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_htxhm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_jq2sk")
+}],
+"loop": 1,
+"name": &"key_walk",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_h2yge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_272bh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_hrvbo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_uypp3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_blkrb")
+}],
+"loop": 1,
+"name": &"slime walk",
+"speed": 7.0
+}]
+
+[sub_resource type="Theme" id="Theme_kek77"]
+default_font_size = 20
+
+[node name="Node2D" type="Node2D" unique_id=1410200077]
+
+[node name="level backgrounds" type="Node" parent="." unique_id=1703814061]
+script = ExtResource("1_4c57u")
+
+[node name="vignette" type="Sprite2D" parent="level backgrounds" unique_id=57909655]
+z_index = 10
+position = Vector2(575, 325)
+scale = Vector2(0.60615647, 0.60615647)
+texture = ExtResource("2_efxa6")
+
+[node name="bg1_hw3" type="Area2D" parent="level backgrounds" unique_id=1538922474]
+visible = false
+z_index = -1
+position = Vector2(575, 325)
+
+[node name="bg1" type="Sprite2D" parent="level backgrounds/bg1_hw3" unique_id=1489159332]
+z_index = -1
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("3_efxa6")
+
+[node name="104" type="Sprite2D" parent="level backgrounds/bg1_hw3" unique_id=150662486]
+position = Vector2(-225, -230)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("4_0odxb")
+
+[node name="105" type="Sprite2D" parent="level backgrounds/bg1_hw3" unique_id=634466214]
+position = Vector2(390, -240)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("5_lswn8")
+
+[node name="bg2_rm101" type="Area2D" parent="level backgrounds" unique_id=872818559]
+visible = false
+z_index = -1
+position = Vector2(575, 325)
+
+[node name="bg2" type="Sprite2D" parent="level backgrounds/bg2_rm101" unique_id=41202452]
+z_index = -1
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_w48qg")
+
+[node name="teddy bear" type="Area2D" parent="level backgrounds/bg2_rm101" unique_id=1933165835 groups=["bear"]]
+
+[node name="bear spr" type="Sprite2D" parent="level backgrounds/bg2_rm101/teddy bear" unique_id=220325174]
+position = Vector2(-366, 227)
+scale = Vector2(0.08998665, 0.08998665)
+texture = ExtResource("7_0n3wm")
+
+[node name="bear col" type="CollisionShape2D" parent="level backgrounds/bg2_rm101/teddy bear" unique_id=1043742491]
+position = Vector2(-366, 219)
+scale = Vector2(5.2124786, 3.6916668)
+shape = SubResource("RectangleShape2D_t7n2i")
+
+[node name="bg3_hw2" type="Area2D" parent="level backgrounds" unique_id=1192121109]
+visible = false
+z_index = -1
+position = Vector2(575, 325)
+
+[node name="bg3" type="Sprite2D" parent="level backgrounds/bg3_hw2" unique_id=247768724]
+z_index = -1
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("5_074og")
+
+[node name="102" type="Sprite2D" parent="level backgrounds/bg3_hw2" unique_id=179447153]
+position = Vector2(-225, -230)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("8_a6jrf")
+
+[node name="103" type="Sprite2D" parent="level backgrounds/bg3_hw2" unique_id=1390501433]
+position = Vector2(390, -240)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("9_xuqvo")
+
+[node name="bg4_hw1" type="Area2D" parent="level backgrounds" unique_id=1475984423]
+visible = false
+z_index = -1
+position = Vector2(575, 325)
+
+[node name="bg4" type="Sprite2D" parent="level backgrounds/bg4_hw1" unique_id=1743782338]
+z_index = -1
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("6_cegan")
+
+[node name="100" type="Sprite2D" parent="level backgrounds/bg4_hw1" unique_id=1328483115]
+position = Vector2(-450, -115)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("11_qsp4k")
+
+[node name="101" type="Sprite2D" parent="level backgrounds/bg4_hw1" unique_id=1980758986]
+position = Vector2(125, -125)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("12_kq58d")
+
+[node name="bg5_rm100 (unused)" type="Area2D" parent="level backgrounds" unique_id=81772045]
+visible = false
+z_index = -1
+position = Vector2(575, 325)
+
+[node name="bg5 (unused)" type="Sprite2D" parent="level backgrounds/bg5_rm100 (unused)" unique_id=700619307]
+z_index = -1
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("13_jq2sk")
+
+[node name="bg6_rm102" type="Area2D" parent="level backgrounds" unique_id=351086400]
+visible = false
+z_index = -1
+position = Vector2(575, 325)
+
+[node name="bg6" type="Sprite2D" parent="level backgrounds/bg6_rm102" unique_id=600004215]
+z_index = -1
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("7_074og")
+
+[node name="testtube" type="Sprite2D" parent="level backgrounds/bg6_rm102" unique_id=718639505]
+z_index = 8
+position = Vector2(398, -9)
+scale = Vector2(0.127, 0.127)
+texture = ExtResource("9_cegan")
+
+[node name="crying_girl_area" type="Area2D" parent="level backgrounds/bg6_rm102" unique_id=13854286 groups=["crying girl"]]
+script = ExtResource("16_come4")
+
+[node name="crying_girl" type="AnimatedSprite2D" parent="level backgrounds/bg6_rm102/crying_girl_area" unique_id=1005061910]
+z_index = 11
+position = Vector2(366, 190)
+scale = Vector2(0.2531352, 0.2531352)
+sprite_frames = SubResource("SpriteFrames_3xd07")
+animation = &"crying"
+frame_progress = 0.58498913
+
+[node name="crying_textbox" type="Sprite2D" parent="level backgrounds/bg6_rm102/crying_girl_area/crying_girl" unique_id=412618134]
+visible = false
+position = Vector2(0, -288.38342)
+scale = Vector2(1.6232677, 1.6232677)
+texture = ExtResource("20_b1qrp")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="level backgrounds/bg6_rm102/crying_girl_area/crying_girl/crying_textbox" unique_id=317362946]
+
+[node name="Label" type="Label" parent="level backgrounds/bg6_rm102/crying_girl_area/crying_girl/crying_textbox/CanvasLayer" unique_id=137509310]
+visible = false
+offset_left = 813.0
+offset_top = 382.0
+offset_right = 975.0
+offset_bottom = 410.0
+theme = SubResource("Theme_facbu")
+theme_override_colors/font_color = Color(0.019607844, 0.15686275, 0.20784314, 1)
+theme_override_colors/font_shadow_color = Color(0.6117647, 0.6313726, 0.6156863, 1)
+text = "im the crying girl"
+
+[node name="crying_girl_col" type="CollisionShape2D" parent="level backgrounds/bg6_rm102/crying_girl_area" unique_id=1299765307]
+visible = false
+z_index = 12
+position = Vector2(155.5, 131.41226)
+scale = Vector2(4.6191025, 7.5649123)
+shape = SubResource("RectangleShape2D_j0ogg")
+
+[node name="bg7_rm103" type="Area2D" parent="level backgrounds" unique_id=1110910396]
+visible = false
+z_index = -1
+position = Vector2(575, 325)
+
+[node name="bg7" type="Sprite2D" parent="level backgrounds/bg7_rm103" unique_id=1369203921]
+z_index = -1
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("8_cegan")
+
+[node name="testtube" type="Sprite2D" parent="level backgrounds/bg7_rm103" unique_id=1617315978]
+z_index = 8
+position = Vector2(-403, -27)
+scale = Vector2(0.127, 0.127)
+texture = ExtResource("9_cegan")
+flip_h = true
+
+[node name="ventarea" type="Area2D" parent="level backgrounds/bg7_rm103" unique_id=1724007943 groups=["vent"]]
+
+[node name="vent" type="CollisionShape2D" parent="level backgrounds/bg7_rm103/ventarea" unique_id=1582475824]
+position = Vector2(345, 141)
+scale = Vector2(8.008896, 5.237564)
+shape = SubResource("RectangleShape2D_dwbtc")
+
+[node name="monsterarea" type="Area2D" parent="level backgrounds/bg7_rm103" unique_id=116350378 groups=["monster"]]
+
+[node name="monster" type="AnimatedSprite2D" parent="level backgrounds/bg7_rm103/monsterarea" unique_id=302848231]
+z_index = 9
+position = Vector2(-359.99997, 141)
+scale = Vector2(0.3427549, 0.3427549)
+sprite_frames = SubResource("SpriteFrames_dwbtc")
+animation = &"monster"
+frame_progress = 0.3553669
+
+[node name="monstercol" type="CollisionShape2D" parent="level backgrounds/bg7_rm103/monsterarea" unique_id=1797989397]
+z_index = 12
+position = Vector2(-268.22736, 119)
+scale = Vector2(9.845476, 21.213552)
+shape = SubResource("RectangleShape2D_h83rl")
+
+[node name="bg8_rm104" type="Area2D" parent="level backgrounds" unique_id=326308038]
+z_index = -1
+position = Vector2(575, 325)
+
+[node name="bg8" type="Sprite2D" parent="level backgrounds/bg8_rm104" unique_id=281098312]
+z_index = -1
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("9_82xsv")
+
+[node name="crack" type="Sprite2D" parent="level backgrounds/bg8_rm104" unique_id=1077469719]
+position = Vector2(-333.99997, 10.999998)
+scale = Vector2(0.23913445, 0.34677267)
+texture = ExtResource("27_abqjc")
+
+[node name="bg9_rm105" type="Area2D" parent="level backgrounds" unique_id=585375967]
+visible = false
+z_index = -1
+position = Vector2(575, 325)
+
+[node name="bg9" type="Sprite2D" parent="level backgrounds/bg9_rm105" unique_id=253133036]
+z_index = -1
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("10_getpj")
+
+[node name="tube" type="Sprite2D" parent="level backgrounds/bg9_rm105" unique_id=2045774696]
+position = Vector2(24, -122.999985)
+scale = Vector2(0.127, 0.127)
+texture = ExtResource("18_a6jrf")
+
+[node name="crack" type="Sprite2D" parent="level backgrounds/bg9_rm105" unique_id=850752399]
+position = Vector2(-23, 107)
+scale = Vector2(0.18797392, 0.18797392)
+texture = ExtResource("19_xuqvo")
+
+[node name="bg9_tube" type="Area2D" parent="level backgrounds/bg9_rm105" unique_id=484435118 groups=["bg9_tube"]]
+
+[node name="tube" type="CollisionShape2D" parent="level backgrounds/bg9_rm105/bg9_tube" unique_id=30265304]
+position = Vector2(-15, 7)
+scale = Vector2(8.584615, 8.584615)
+shape = SubResource("RectangleShape2D_3xd07")
+
+[node name="rightdoor" type="Area2D" parent="level backgrounds" unique_id=1944750491 groups=["doors", "rightdoor"]]
+visible = false
+position = Vector2(345, 331.49994)
+scale = Vector2(0.6085, 0.6085)
+
+[node name="right_door_hitbox" type="CollisionShape2D" parent="level backgrounds/rightdoor" unique_id=1553921271]
+position = Vector2(1013.9688, -17.255432)
+shape = SubResource("RectangleShape2D_jq8tk")
+
+[node name="leftdoor" type="Area2D" parent="level backgrounds" unique_id=1075978415 groups=["doors", "leftdoor"]]
+visible = false
+position = Vector2(345, 331.49994)
+scale = Vector2(0.6085, 0.6085)
+
+[node name="left_door_hitbox" type="CollisionShape2D" parent="level backgrounds/leftdoor" unique_id=1282073056]
+shape = SubResource("RectangleShape2D_jq8tk")
+
+[node name="Tube (unused)" type="Area2D" parent="level backgrounds" unique_id=1386746560 groups=["Tubes"]]
+visible = false
+position = Vector2(221, 532)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="level backgrounds/Tube (unused)" unique_id=1427822981]
+scale = Vector2(4.8139696, 10.1720085)
+shape = SubResource("RectangleShape2D_6fhyq")
+
+[node name="Sprite2D" type="Sprite2D" parent="level backgrounds/Tube (unused)" unique_id=1617185079]
+scale = Vector2(0.35588437, 0.35588437)
+texture = ExtResource("5_7mycd")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="level backgrounds" unique_id=1424165918]
+
+[node name="room" type="Label" parent="level backgrounds/CanvasLayer" unique_id=117494663]
+visible = false
+z_index = 10
+offset_left = 32.0
+offset_top = 18.0
+offset_right = 117.0
+offset_bottom = 67.0
+text = "bg8_rm104 (start)"
+
+[node name="door_prompt" type="AnimatedSprite2D" parent="level backgrounds/CanvasLayer" unique_id=741968890]
+visible = false
+position = Vector2(1064, 58)
+scale = Vector2(0.5458494, 0.5458494)
+sprite_frames = SubResource("SpriteFrames_jq8tk")
+animation = &"key"
+frame_progress = 0.57122624
+
+[node name="win" type="Area2D" parent="level backgrounds" unique_id=1307408451]
+visible = false
+z_index = 20
+position = Vector2(575, 325)
+
+[node name="win_screen" type="Sprite2D" parent="level backgrounds/win" unique_id=2036281908]
+z_index = 20
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("34_6iyjs")
+
+[node name="win_song" type="AudioStreamPlayer2D" parent="level backgrounds/win" unique_id=1188639358]
+stream = ExtResource("34_blkrb")
+
+[node name="hallway_song" type="AudioStreamPlayer2D" parent="level backgrounds/win" unique_id=294723999]
+stream = ExtResource("34_uypp3")
+autoplay = true
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=1392863426]
+position = Vector2(170, 425)
+scale = Vector2(1.867944, 1.867944)
+script = ExtResource("1_0xm2m")
+
+[node name="player_area" type="Area2D" parent="Player" unique_id=1691923551]
+
+[node name="PlayerHitbox" type="CollisionShape2D" parent="Player/player_area" unique_id=1915402576]
+visible = false
+position = Vector2(1.8737183, 24.090652)
+scale = Vector2(2.4103763, 5.771186)
+shape = SubResource("RectangleShape2D_w48qg")
+
+[node name="Girl" type="AnimatedSprite2D" parent="Player" unique_id=1415885395]
+scale = Vector2(0.24273737, 0.24273737)
+sprite_frames = SubResource("SpriteFrames_kek77")
+
+[node name="girl_textbox" type="Sprite2D" parent="Player/Girl" unique_id=484801626]
+visible = false
+z_index = 14
+position = Vector2(105.86218, -544.749)
+scale = Vector2(0.6808205, 0.6808205)
+texture = ExtResource("10_efxa6")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Player/Girl/girl_textbox" unique_id=456305983]
+
+[node name="GirlLabel" type="Label" parent="Player/Girl/girl_textbox/CanvasLayer" unique_id=1705993611]
+visible = false
+z_index = 15
+offset_left = 113.0
+offset_top = 140.0
+offset_right = 208.0
+offset_bottom = 253.0
+theme = SubResource("Theme_a6jrf")
+theme_override_colors/font_color = Color(0.18039216, 0.13333334, 0.078431375, 1)
+theme_override_colors/font_shadow_color = Color(0.4509804, 0.39215687, 0.33333334, 1)
+text = "hello
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="Slime" type="AnimatedSprite2D" parent="Player" unique_id=475102974]
+position = Vector2(-60, 80)
+scale = Vector2(0.049999997, 0.049999997)
+sprite_frames = SubResource("SpriteFrames_6fhyq")
+animation = &"slime walk"
+frame = 1
+frame_progress = 0.92166823
+
+[node name="slime_textbox" type="Sprite2D" parent="Player/Slime" unique_id=1805902320]
+visible = false
+z_index = 14
+position = Vector2(-74.12805, -993.1355)
+scale = Vector2(2.4066415, 2.4066415)
+texture = ExtResource("8_dg77c")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Player/Slime/slime_textbox" unique_id=338757280]
+
+[node name="SlimeLabel" type="Label" parent="Player/Slime/slime_textbox/CanvasLayer" unique_id=366145519]
+visible = false
+z_index = 15
+offset_left = -21.0
+offset_top = 440.0
+offset_right = 247.0
+offset_bottom = 553.0
+theme = SubResource("Theme_kek77")
+theme_override_colors/font_color = Color(0.18039216, 0.13333334, 0.078431375, 1)
+theme_override_colors/font_shadow_color = Color(0.28627452, 0.29411766, 0.16078432, 1)
+theme_override_constants/line_spacing = -2
+text = "hello im slime
+this is my label"
+
+[node name="heldkey (unused)" type="Sprite2D" parent="Player/Slime" unique_id=252332418]
+visible = false
+texture = ExtResource("29_qsp4k")
+flip_h = true
+
+[node name="start_menu" type="Area2D" parent="Player" unique_id=485791192]
+z_index = 21
+position = Vector2(220, -50)
+
+[node name="start_screen" type="Sprite2D" parent="Player/start_menu" unique_id=1794402443]
+scale = Vector2(0.33, 0.33)
+texture = ExtResource("54_6iyjs")
+
+[node name="button" type="AnimatedSprite2D" parent="Player/start_menu" unique_id=2025257286]
+z_index = 22
+position = Vector2(218.98532, -108.46298)
+scale = Vector2(0.49683854, 0.49683854)
+sprite_frames = SubResource("SpriteFrames_jq8tk")
+animation = &"key"
+
+[connection signal="area_entered" from="level backgrounds/bg1_hw3" to="Player" method="_on_bg_1_door_area_area_entered"]
+[connection signal="area_entered" from="level backgrounds/Tube (unused)" to="Player" method="_on_tube_area_entered"]
+[connection signal="anti_door_prompt" from="Player" to="level backgrounds" method="_on_player_anti_door_prompt"]
+[connection signal="crying_text" from="Player" to="level backgrounds/bg6_rm102/crying_girl_area" method="_on_player_crying_text"]
+[connection signal="door_prompt" from="Player" to="level backgrounds" method="_on_player_door_prompt"]
+[connection signal="girl_anim" from="Player" to="level backgrounds/bg6_rm102/crying_girl_area" method="_on_player_girl_anim"]
+[connection signal="give_bear" from="Player" to="level backgrounds" method="_on_player_give_bear"]
+[connection signal="level_change" from="Player" to="level backgrounds" method="_on_player_level_change"]
+[connection signal="pickup_bear" from="Player" to="level backgrounds" method="_on_player_pickup_bear"]
+[connection signal="win" from="Player" to="level backgrounds" method="_on_player_win"]
+[connection signal="win" from="Player" to="level backgrounds/bg6_rm102/crying_girl_area" method="_on_player_win"]
+[connection signal="area_entered" from="Player/player_area" to="level backgrounds" method="_on_player_area_area_entered"]
+[connection signal="area_entered" from="Player/player_area" to="Player" method="_on_player_area_area_entered"]
+[connection signal="area_exited" from="Player/player_area" to="Player" method="_on_player_area_area_exited"]
